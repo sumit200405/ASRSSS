@@ -558,6 +558,10 @@ header {
   .contact-info {
     flex-direction: column;
   }
+
+  .contact-info div{
+    width: 50%;
+  }
 }
 
 
