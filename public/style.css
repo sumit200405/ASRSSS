@@ -330,7 +330,7 @@ header{
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
-  margin: 0px 5px;
+  margin: 0px;
 }
 
 @media (max-width: 800px) {
@@ -355,7 +355,7 @@ header{
 .footerNav ul li{
     width:100%;
     text-align: center;
-    margin: 10px;
+    margin: 10px 0px;
 }
 .social-icons a{
     padding: 8px;
