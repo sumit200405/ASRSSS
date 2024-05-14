@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./public/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,9 +24,15 @@
       </div>
       <ul class="mlinks">
         <li class="home hideOnMobile"><a href="./index.html">HOME</a></li>
-        <li class="about hideOnMobile"><a href="./public/about.html">ABOUT</a></li>
-        <li class="blog hideOnMobile"><a href="./public/blog.html">BLOG</a></li>
-        <li class="contact hideOnMobile"><a href="./public/contact.html">CONTACT</a></li>
+        <li class="about hideOnMobile">
+          <a href="./public/about.html">ABOUT</a>
+        </li>
+        <li class="blog hideOnMobile">
+          <a href="./public/blog.html">BLOG</a>
+        </li>
+        <li class="contact hideOnMobile">
+          <a href="./public/contact.html">CONTACT</a>
+        </li>
       </ul>
       <a href="./public/donate.html" class="donate action-button">DONATE</a>
       <div class="toggle-button">
@@ -33,20 +41,66 @@
     </div>
     <div class="dropdown-menu">
       <li class="home hideOnMobile"><a href="./index.html">HOME</a></li>
-        <li class="about hideOnMobile"><a href="./public/about.html">ABOUT</a></li>
-        <li class="blog hideOnMobile"><a href="./public/blog.html">BLOG</a></li>
-        <li class="contact hideOnMobile"><a href="./public/contact.html">CONTACT</a></li>
-        <li  class="donate action-button"><a href="./public/donate.html">DONATE</a></li>
+      <li class="about hideOnMobile">
+        <a href="./public/about.html">ABOUT</a>
+      </li>
+      <li class="blog hideOnMobile"><a href="./public/blog.html">BLOG</a></li>
+      <li class="contact hideOnMobile">
+        <a href="./public/contact.html">CONTACT</a>
+      </li>
+      <li class="donate action-button">
+        <a href="./public/donate.html">DONATE</a>
+      </li>
     </div>
   </header>
   <div class="bg">
-    <h1>
-      ANJANAPURA SRI RAGHAVENDRA SWAMY SEVA SAMITI
-    </h1>
+    <h1>ANJANAPURA SRI RAGHAVENDRA SWAMY SEVA SAMITI</h1>
   </div>
-  <div class="about-us">
-  </div>
+  <section class="aboutus">
+    <div class="imagescroller">
+      <div class="slider">
+        <div class="slide">
+          <img src="../assets/images/bg.jpg" id="sliderimg1" alt="Image 1" />
+          <img src="../assets/images/bg.png" id="sliderimg2" alt="Image 2" />
+          <img src="../assets/images/temp.png" id="sliderimg3" alt="Image 3" />
+        </div>
+      </div>
+      <div class="slider-nav">
+        <a href="#sliderimg1" class="button"></a>
+        <a href="#sliderimg2" class="button"></a>
+        <a href="#sliderimg3" class="button"></a>
+      </div>
+    </div>
+    <div class="text">
+      <h1>About Us</h1>
+      <p>
+        The Sri Raghavendra Swamy Temple Trust is dedicated to preserving the legacy of Sri Raghavendra Swamy.
+        We are dedicated to serving Sri Raghavendra Swamy with utmost devotion and reverence.
+      </p>
+    </div>
+  </section>
   <script src="./public/script.js"></script>
+  <footer class="footer">
+    <h3>ANJANAPURA SRI RAGHAVENDRA SWAMY SEVA SAMITI</h3>
+    <div class="social-icons">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footerNav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./public/blog.html">Blog</a></li>
+        <li><a href="./public/about.html">About</a></li>
+        <li><a href="./public/contact.html">Contact Us</a></li>
+        <li><a href="./public/donate.html">Donate</a></li>
+      </ul>
+    </div>
+    <div class="footerBottom">
+      <p>Copyright &copy;2024; Designed by <span class="designer">ASRSSS</span></p>
+    </div>
+  </footer>
 </body>
 
 </html>
