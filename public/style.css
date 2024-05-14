@@ -295,7 +295,6 @@ header {
   opacity: 0, 9;
 }
 
-/* Hover affect on social media icon */
 .social-icons a:hover {
   background-color: #111;
   transition: 0.5s;
@@ -390,6 +389,118 @@ header {
   background-color: white;
 }
 
+.contact-bg {
+  padding-top: 60px;
+  height: 40vh;
+  background-color: #1f1f1f;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-bg h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.contact-bg h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  letter-spacing: 4px;
+}
+
+.line div {
+  margin: 0 0.2rem;
+}
+
+.line div:nth-child(1),
+.line div:nth-child(3) {
+  height: 3px;
+  width: 70px;
+  background: orange;
+  border-radius: 5px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+}
+
+.line div:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  border-radius: 50%;
+}
+
+.text {
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.contact-bg .text {
+  margin: 1.6rem 0;
+}
+
+.contact-body {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  margin: 2rem 0;
+  text-align: center;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.contact-info span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info div {
+  width: 20%;
+  margin: 0.8rem 0;
+  padding: 1rem;
+}
+
+.contact-info span .fas {
+  font-size: 2rem;
+  padding-bottom: 0.9rem;
+  color: orange;
+}
+
+.contact-info div span:nth-child(2) {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.contact-info .text {
+  padding-top: 0.4rem;
+  text-align: center;
+}
+
+.map {
+  width: 100%;
+}
+
 @media (max-width: 800px) {
 
   .navbar>.mlinks,
@@ -439,7 +550,16 @@ header {
   .about li {
     padding: 10px 10%;
   }
+
+  .contact-bg .text {
+    width: 50%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
 }
+
 
 @media (max-width: 500px) {
   .dropdown-menu {
