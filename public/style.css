@@ -80,7 +80,7 @@ header {
 }
 
 .dropdown-menu {
-  position: absolute;
+  position: fixed;
   right: 2rem;
   top: 60px;
   width: 300px;
