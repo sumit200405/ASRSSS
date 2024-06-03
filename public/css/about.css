@@ -1,0 +1,50 @@
+.about div {
+  text-align: center;
+}
+
+.about h1 {
+  padding: 10px 0px;
+  color: var(--body-color);
+  background-color: var(--first-color);
+}
+
+.about p {
+  padding: 10px 0%;
+  font-size: large;
+}
+
+.about li {
+  padding: 10px 0%;
+  text-align: left;
+  list-style-type: circle;
+}
+
+.summary h1 {
+  color: var(--first-color);
+  background-color: var(--body-color);
+}
+
+@media (max-width: 800px) {
+
+  .about p {
+    padding: 10px 10%;
+  }
+
+  .about li {
+    padding: 10px 10%;
+  }
+}
+
+@media (min-width: 801px) {
+  .about h1 {
+    width: 800px;
+  }
+
+  .about p {
+    width: 800px;
+  }
+
+  .about li {
+    width: 800px;
+  }
+}
