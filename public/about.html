@@ -15,31 +15,8 @@
 </head>
 
 <body>
-  <header>
-    <div class="navbar">
-      <div class="logo">
-        <a href="./index.html">ASRSSS</a>
-      </div>
-      <ul class="mlinks">
-        <li class="home hideOnMobile"><a href="./index.html">HOME</a></li>
-        <li class="about hideOnMobile"><a href="./about.html">ABOUT</a></li>
-        <li class="blog hideOnMobile"><a href="./blogs.html">BLOG</a></li>
-        <li class="contact hideOnMobile"><a href="./contact.html">CONTACT</a></li>
-      </ul>
-      <a href="./donate.html" class="donate action-button">DONATE</a>
-      <div class="toggle-button">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-    <div class="dropdown-menu">
-      <li class="home hideOnMobile"><a href="./index.html">HOME</a></li>
-      <li class="about hideOnMobile"><a href="./about.html">ABOUT</a></li>
-      <li class="blog hideOnMobile"><a href="./blogs.html">BLOG</a></li>
-      <li class="contact hideOnMobile"><a href="./contact.html">CONTACT</a></li>
-      <li class="donate action-button"><a href="./donate.html">DONATE</a></li>
-    </div>
-  </header>
-  <div class="contact-bg" style="height: 50vh;">
+  <user-header></user-header>
+  <div class="banner-bg" style="height: 50vh;">
     <h3>Anjanapura Sri Raghavendra Swamy Temple Trust</h3>
     <h2>ABOUT us</h2>
     <div class="line">
@@ -47,10 +24,12 @@
       <div></div>
       <div></div>
     </div>
-    <p class="text" style="width: 75%;">The Anjanapura Sri Raghavendra Swamy Temple Trust is a devout organization dedicated to preserving and promoting
+    <p class="text" style="width: 75%;">The Anjanapura Sri Raghavendra Swamy Temple Trust is a devout organization
+      dedicated to preserving and promoting
       the legacy of Sri Raghavendra Swamy, a revered saint in the Madhvacharya tradition. Our temple serves as a
       spiritual sanctuary for devotees seeking blessings, knowledge, and inner peace.</p>
   </div>
+  
   <section class="about">
     <div class="mission">
       <h1 style="margin-top: 0px;">Our Mission</h1>
@@ -90,28 +69,11 @@
       </p>
     </div>
   </section>
-  <script src="./js/script.js"></script>
-  <footer class="footer">
-    <h3>ANJANAPURA SRI RAGHAVENDRA SWAMY SEVA SAMITI</h3>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/profile.php?id=61558869050429&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/anjanapura_rayara_matha?igsh=ZDE4dXloZ3JrYjVp"><i class="fa-brands fa-instagram"></i></a>
-      <a href=""><i class="fa-brands fa-twitter"></i></a>
-      <a href=""><i class="fa-brands fa-youtube"></i></a>
-    </div>
-    <div class="footerNav">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./blogs.html">Blog</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-        <li><a href="./donate.html">Donate</a></li>
-      </ul>
-    </div>
-    <div class="footerBottom">
-      <p>Copyright &copy;2024; Designed by <span class="designer">ASRSSS</span></p>
-    </div>
-  </footer>
+
+  <script type="module" src="./js/script.js"></script>
+
+  <user-footer></user-footer>
+
 </body>
 
 </html>

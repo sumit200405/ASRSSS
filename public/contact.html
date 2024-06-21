@@ -15,32 +15,10 @@
 </head>
 
 <body>
-  <header>
-    <div class="navbar">
-      <div class="logo">
-        <a href="./index.html">ASRSSS</a>
-      </div>
-      <ul class="mlinks">
-        <li class="home hideOnMobile"><a href="./index.html">HOME</a></li>
-        <li class="about hideOnMobile"><a href="./about.html">ABOUT</a></li>
-        <li class="blog hideOnMobile"><a href="./blogs.html">BLOG</a></li>
-        <li class="contact hideOnMobile"><a href="./contact.html">CONTACT</a></li>
-      </ul>
-      <a href="./donate.html" class="donate action-button">DONATE</a>
-      <div class="toggle-button">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-    <div class="dropdown-menu">
-      <li class="home hideOnMobile"><a href="./index.html">HOME</a></li>
-      <li class="about hideOnMobile"><a href="./about.html">ABOUT</a></li>
-      <li class="blog hideOnMobile"><a href="./blogs.html">BLOG</a></li>
-      <li class="contact hideOnMobile"><a href="./contact.html">CONTACT</a></li>
-      <li class="donate action-button"><a href="./donate.html">DONATE</a></li>
-    </div>
-  </header>
+  <user-header></user-header>
+
   <section class="contact-section">
-    <div class="contact-bg">
+    <div class="banner-bg">
       <h3>Get in Touch with Us</h3>
       <h2>contact us</h2>
       <div class="line">
@@ -51,7 +29,6 @@
       <p class="text">Have a question or want to learn more about us? We're here to help! Reach out to us and let's
         connect.</p>
     </div>
-
 
     <div class="contact-body">
       <div class="contact-info">
@@ -76,6 +53,7 @@
           <span class="text">Monday - Friday (9:00 AM to 5:00 PM)</span>
         </div>
       </div>
+
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d972.4471954825391!2d77.5620544!3d12.8569146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae41e4ba34065f%3A0xb24b0f1255271ff4!2sShree%20Guru%20Raghavendra%20Mutt!5e0!3m2!1sen!2sin!4v1715710869007!5m2!1sen!2sin"
@@ -84,28 +62,10 @@
       </div>
     </div>
   </section>
-  <script src="./js/script.js"></script>
-  <footer class="footer">
-    <h3>ANJANAPURA SRI RAGHAVENDRA SWAMY SEVA SAMITI</h3>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/profile.php?id=61558869050429&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/anjanapura_rayara_matha?igsh=ZDE4dXloZ3JrYjVp"><i class="fa-brands fa-instagram"></i></a>
-      <a href=""><i class="fa-brands fa-twitter"></i></a>
-      <a href=""><i class="fa-brands fa-youtube"></i></a>
-    </div>
-    <div class="footerNav">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./blogs.html">Blog</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-        <li><a href="./donate.html">Donate</a></li>
-      </ul>
-    </div>
-    <div class="footerBottom">
-      <p>Copyright &copy;2024; Designed by <span class="designer">ASRSSS</span></p>
-    </div>
-  </footer>
+
+  <script type="module" src="./js/script.js"></script>
+
+  <user-footer></user-footer>
 </body>
 
 </html>

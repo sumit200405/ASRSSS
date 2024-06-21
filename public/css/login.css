@@ -1,0 +1,40 @@
+body{
+    background-color: #ececec;
+    height: 100vh;
+}
+
+.login-card{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 99;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#login-google{
+    background-color: orange;
+    font-weight: 600;
+    color: white ;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 30px;
+}
+
+.login h1{
+    padding: 30px;
+    text-align: center;
+}

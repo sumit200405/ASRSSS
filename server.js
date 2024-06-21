@@ -54,6 +54,42 @@ app.post('/upload', (req, res) => {
     });
 });
 
+app.get("/admin", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "login.html"));
+});
+
+app.get("/dashboard", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "dashboard.html"));
+});
+
+app.get("/home", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+app.get("/blogs", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "blogs.html"));
+});
+
+app.get("/about-us", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "about.html"));
+});
+
+app.get("/contact-us", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "contact.html"));
+});
+
+app.get("/donate", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "donate.html"));
+});
+
+app.get("/editor", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "editor.html"));
+});
+
+app.get("/:blog/editor", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "editor.html"));
+});
+
 app.get("/:blog", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "blog.html"));
 });

@@ -15,31 +15,9 @@
 </head>
 
 <body>
-  <header>
-    <div class="navbar">
-      <div class="logo">
-        <a href="./index.html">ASRSSS</a>
-      </div>
-      <ul class="mlinks">
-        <li class="home hideOnMobile"><a href="./index.html">HOME</a></li>
-        <li class="about hideOnMobile"><a href="./about.html">ABOUT</a></li>
-        <li class="blog hideOnMobile"><a href="./blogs.html">BLOG</a></li>
-        <li class="contact hideOnMobile"><a href="./contact.html">CONTACT</a></li>
-      </ul>
-      <a href="./donate.html" class="donate action-button">DONATE</a>
-      <div class="toggle-button">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-    <div class="dropdown-menu">
-      <li class="home hideOnMobile"><a href="./index.html">HOME</a></li>
-      <li class="about hideOnMobile"><a href="./about.html">ABOUT</a></li>
-      <li class="blog hideOnMobile"><a href="./blogs.html">BLOG</a></li>
-      <li class="contact hideOnMobile"><a href="./contact.html">CONTACT</a></li>
-      <li class="donate action-button"><a href="./donate.html">DONATE</a></li>
-    </div>
-  </header>
-  <div class="contact-bg" style="height: 50vh;">
+  <user-header></user-header>
+
+  <div class="banner-bg" style="height: 50vh;">
     <h3>Anjanapura Sri Raghavendra Swamy Temple Trust</h3>
     <h2>Donate</h2>
     <div class="line">
@@ -54,6 +32,7 @@
       By donating today, you become a partner in preserving the legacy of Sri Raghavendra Swamy and fostering a place of
       spiritual refuge for all.</p>
   </div>
+
   <section class="donation">
     <div class="image-scroller">
       <div class="slider">
@@ -69,8 +48,7 @@
           </div>
         </div>
         <div class="buttons">
-          <button id="prev">
-            << /button>
+          <button id="prev"><</button>
               <button id="next">></button>
         </div>
         <ul class="dots">
@@ -91,49 +69,89 @@
       </p>
     </div>
   </section>
+
   <div class="contribute">
-    <div>
+    <div class="razorpay-btn cont">
       <h2 class="orangebg">Ready to contribute?</h2>
+      <p class="orangebg">
+        Click the link below to be redirected to our payments page, where you can proceed with your donation.
+      </p>
+      <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_OPP4ST5cBqzVtW/view" data-text="Pay Now" data-color="#528FF0" data-size="medium">
+        <script>
+          (function(){
+            var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+            if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+            s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+            rzp && rzp.init && rzp.init()}})();
+        </script>
+      </div>         
+    </div>
+
+    <div class="line">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+    <div class="help cont">
+      <h2 class="orangebg">Need some help?</h2>
       <p class="orangebg">
         Click the link below to contact a member of our donation team. They'll
         be happy to answer any questions and guide you through the donation
         process.
       </p>
-    </div>
-    <div>
-      <a href="./public/donate.html" class="contact-us action-button" style="margin: 1.5rem"><svg
-          xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24">
-          <path
-            d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z">
-          </path>
-        </svg>
-        CONTACT US</a>
+      <div>
+        <a href="./public/donate.html" class="contact-us action-button" style="margin: 1.5rem"><svg
+            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24">
+            <path
+              d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z">
+            </path>
+          </svg>
+          CONTACT US</a>
+      </div>
     </div>
   </div>
-  <script src="./js/script.js"></script>
-  <footer class="footer">
-    <h3>ANJANAPURA SRI RAGHAVENDRA SWAMY SEVA SAMITI</h3>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/profile.php?id=61558869050429&mibextid=ZbWKwL"><i
-          class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/anjanapura_rayara_matha?igsh=ZDE4dXloZ3JrYjVp"><i
-          class="fa-brands fa-instagram"></i></a>
-      <a href=""><i class="fa-brands fa-twitter"></i></a>
-      <a href=""><i class="fa-brands fa-youtube"></i></a>
+  
+  <section class="donation">
+    <div class="text">
+      <h1>How your donations are used</h1>
+      <p>
+        Your donation helps us continue to be a place of spiritual growth,
+        reflection, and community. Every contribution, big or small, allows us
+        to maintain our sacred space and offer programs that inspire and
+        uplift all who visit. Donate today and be a part of something
+        meaningful.
+      </p>
     </div>
-    <div class="footerNav">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./blogs.html">Blog</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-        <li><a href="./donate.html">Donate</a></li>
-      </ul>
+    <div class="image-scroller">
+      <div class="slider">
+        <div class="list">
+          <div class="item">
+            <img src="./assets/images/img1.JPG" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/images/img2.JPG" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/images/img3.JPG" alt="">
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="prev"><</button>
+              <button id="next">></button>
+        </div>
+        <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </div>
-    <div class="footerBottom">
-      <p>Copyright &copy;2024; Designed by <span class="designer">ASRSSS</span></p>
-    </div>
-  </footer>
+  </section>
+
+  <script type="module" src="./js/script.js"></script>
+
+  <user-footer></user-footer>
 </body>
 
 </html>
