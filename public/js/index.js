@@ -22,10 +22,15 @@ const blogSection = document.querySelector('.blogs-section');
 const fetchBlogs = async () => {
     try {
         const querySnapshot = await getDocs(collection(db, "blogs"));
-        querySnapshot.forEach((doc) => {
-            if (doc.id !== decodeURI(location.pathname.split("/").pop())) {
-                createBlog(doc);
-            }
+
+        const documents = querySnapshot.docs;
+
+        documents.sort((a, b) => b.id.localeCompare(a.id));
+
+        const latestDocuments = documents.slice(0, 4);
+
+        latestDocuments.forEach((doc) => {
+            createBlog(doc);
         });
     } catch (error) {
         console.error("Error fetching blogs: ", error);

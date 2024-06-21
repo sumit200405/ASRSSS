@@ -1,3 +1,109 @@
+class UserHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <header class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/home">ASRSSS</a>
+                </div>
+                <ul class="mlinks">
+                    <a href="/home"><li class="home hideOnMobile">HOME</li></a>
+                    <a href="/about-us"><li class="about hideOnMobile">ABOUT</li></a>
+                    <a href="/blogs"><li class="hideOnMobile">BLOG</li></a>
+                    <a href="/contact-us"><li class="contact hideOnMobile">CONTACT</li></a>
+                </ul>
+                <a href="/donate" class="donate hideOnMobile action-button">DONATE</a>
+                <div class="toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <a href="/home"><li class="home">HOME</li></a>
+                    <a href="/about-us"><li class="about">ABOUT</li></a>
+                    <a href="/blogs"><li class="blog">BLOG</li></a>
+                    <a href="/contact-us"><li class="contact">CONTACT</li></a>
+                    <a href="/donate"><li class="donate action-button">DONATE</li></a>
+                </ul>
+            </div>
+        </header>`;
+    }
+}
+
+class AdminHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <header class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/home">ASRSSS</a>
+                </div>
+                <ul class="mlinks">
+                    <a href="/home"><li class="home hideOnMobile">HOME</li></a>
+                    <a href="/about-us"><li class="about hideOnMobile">ABOUT</li></a>
+                    <a href="/blogs"><li class="hideOnMobile">BLOG</li></a>
+                    <a href="/contact-us"><li class="contact hideOnMobile">CONTACT</li></a>
+                    <a href="/donate"><li class="donate hideOnMobile">DONATE</li></a>
+                    <a href="/editor"><li class="editor hideOnMobile">EDITOR</li></a>
+                    <a href="/dashboard"><li class="dash hideOnMobile">DASHBOARD</li></a>
+
+                </ul>
+                <a href="" class="logout hideOnMobile action-button">LOGOUT</a>
+                <div class="toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <a href="/home"><li class="home">HOME</li></a>
+                    <a href="/about-us"><li class="about">ABOUT</li></a>
+                    <a href="/blogs"><li class="blog">BLOG</li></a>
+                    <a href="/editor"><li class="editor">EDITOR</li></a>
+                    <a href="/dashboard"><li class="dash">DASHBOARD</li></a>
+                    <a href="/contact-us"><li class="contact">CONTACT</li></a>
+                    <a href=""><li class="logout action-button">LOGOUT</li></a>
+                </ul>
+            </div>
+        </header>`;
+    }
+}
+
+class UserFooter extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+      <footer class="footer">
+        <h3>ANJANAPURA SRI RAGHAVENDRA SWAMY SEVA SAMITI</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61558869050429&mibextid=ZbWKwL"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/anjanapura_rayara_matha?igsh=ZDE4dXloZ3JrYjVp"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/blogs">Blog</a></li>
+            <li><a href="/about-us">About</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/donate">Donate</a></li>
+          </ul>
+        </div>
+        <div class="footerBottom">
+          <p>
+            Copyright &copy;2024; Designed by <span class="designer">ASRSSS</span>
+          </p>
+        </div>
+      </footer>`;
+    }
+}
+
+customElements.define('user-header', UserHeader);
+customElements.define('admin-header', AdminHeader);
+customElements.define('user-footer', UserFooter);
+
+
+
 // Menu toggle
 
 const toggleButton = document.querySelector(".toggle-button")
